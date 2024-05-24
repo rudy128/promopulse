@@ -3,31 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    background-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.calendly-inline-widget {
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.logo::after {
+    content: "PromoPulse";
+    display: flex;
+    transform: rotateX(180deg);
+    background-image:
+        linear-gradient(180deg, rgba(255, 255, 255, .0) 10%, rgba(255, 255, 255, .5));
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.chevron-button {
+    position: relative;
+    animation: moveUpDown 0.5s infinite alternate;
+    /* Adjust duration as needed */
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30px);
+        /* Move up by 10px */
+    }
 }
