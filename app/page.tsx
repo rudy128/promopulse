@@ -5,7 +5,7 @@ import Calendly from "./components/Calendly";
 
 export default function Home() {
   return (
-    <main className="text-white flex justify-center items-center flex-col">
+    <main className="text-white bg-[url('./bg.png')] bg-no-repeat bg-cover bg-left-bottom overflow-hidden bg-origin-padding flex justify-center items-center flex-col">
       <Nav />
       <div className='bg-black h-[5dvh] flex justify-between items-center w-full px-10 p-6'>
         <button className="hover:text-white/80">Home</button>

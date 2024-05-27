@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    background: url('./bg.png');
-}
-
 .calendly-inline-widget {
     padding: 0 !important;
     margin: 0 !important;
