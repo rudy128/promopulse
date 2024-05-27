@@ -27,6 +27,19 @@
     /* Adjust duration as needed */
 }
 
+
+.ribbon-right {
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0%, 100% 76%, 100% 100%, 94% 77%, 0 77%, 10% 40%);
+
+}
+
+.ribbon-left {
+    position: absolute;
+    clip-path: polygon(100% 0%, 0 0, 0 76%, 0 100%, 6% 77%, 100% 77%, 90% 40%);
+
+}
+
 @keyframes moveUpDown {
     0% {
         transform: translateY(0);
