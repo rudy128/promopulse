@@ -36,9 +36,8 @@ const Nav = () => {
 
     return (
         <div className={`w-full ${showNavbar ? `sticky top-0 left-0 z-50` : `hidden`} `}>
-            <div className=' h-[7dvh] w-full bg-[#000000e7] backdrop-blur-[3px] flex justify-around items-center'>
+            <div className=' h-[7dvh] w-full bg-[#000000e7] backdrop-blur-[3px] flex justify-between px-16 items-center'>
                 <div className='font-extrabold hover:text-white/85 cursor-pointer text-2xl'>PromoPulse</div>
-                <div className='flex justify-evenly w-4/12 items-center'><div className='font-bold text-xl'>Home</div></div>
                 <button onClick={handleContact} className='border border-white p-2 rounded-xl hover:text-gray-900 hover:bg-white'>Contact Us</button>
             </div>
         </div>
