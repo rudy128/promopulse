@@ -7,8 +7,8 @@ export default function page() {
     <>
       <div className=' text-4xl lg:text-6xl font-semibold p-6 text-black w-full flex justify-center'><span>Time for <strong className='underline'>The Next Step</strong>!</span></div>
       <div className=' w-full md:flex justify-center items-center p-10 space-y-6 md:space-y-0 m-0'>
-        <InlineWidget url={'https://calendly.com/official-promopulse/30min'} pageSettings={{ backgroundColor: 'ffffff', textColor: '000000', primaryColor: 'a400ff' }} styles={{ height: '850px', minHeight: '0px', minWidth: "70%", paddingRight: "0px", paddingLeft: "0px", marginTop: "0px", marginBottom: "0px" }} />
-        <div className='relative text-black text-lg border shadow-md rounded-2xl h-fit m-6 pl-5 pt-5 pb-4 pr-3 flex flex-col mr-5'>
+        <InlineWidget url={'https://calendly.com/official-promopulse/30min'} pageSettings={{ backgroundColor: 'ececec', textColor: '000000', primaryColor: 'a400ff' }} styles={{ height: '850px', minHeight: '0px', minWidth: "70%", paddingRight: "0px", paddingLeft: "0px", marginTop: "0px", marginBottom: "0px" }} />
+        <div className='relative text-black text-lg border border-[#00000031] backdrop-blur-lg shadow-md rounded-2xl h-fit m-6 pl-5 pt-5 pb-4 pr-3 flex flex-col mr-5'>
           <h1><span className='font-bold text-3xl'>C</span>hange can be uncomfortable and difficult at times</h1>
           <h1>We had the same experience with our brand. think of it as a midlife crisis, but without the sports car.</h1>
           <h1>But it worked out in the end.</h1>

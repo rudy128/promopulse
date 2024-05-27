@@ -18,13 +18,13 @@ const Hero = () => {
     const handleScrollDown = () => {
         // Scroll down by 100vh
         window.scrollTo({
-            top: window.innerHeight * 0.9, // 100vh
+            top: window.innerHeight * 1, // 100vh
             behavior: 'smooth', // Optional: Add smooth scrolling animation
         });
     };
     return (
-        <div className="h-fit w-full space-y-5 bg-[url('../assets/h.webp')] bg-no-repeat bg-cover bg-top bg-origin-padding flex justify-center items-center flex-col">
-            <div className="bg-gray-900/55 w-full h-full flex justify-start p-20 space-y-4 md:space-y-14 pb-0 items-center flex-col">
+        <div className="h-[95dvh] w-full space-y-5 bg-[url('../assets/h.webp')] bg-no-repeat bg-cover bg-top bg-origin-padding flex justify-center items-center flex-col">
+            <div className="bg-gray-900/55 w-full h-full flex justify-start p-20 space-y-4 md:space-y-14 pb-0 pt-32 items-center flex-col">
                 <div className="text-4xl md:text-7xl logo font-extralight">PromoPulse</div>
                 <div className="font-thin sm:text-3xl md:text-5xl text-sm mt-20">WE WILL TAKE YOUR FITNESS BASED BUISNESS</div>
                 <div className='font-thin sm:text-3xl md:text-5xl text-sm'>FROM 10K/M TO 15-20K/M IN 3 MONTHS.</div>

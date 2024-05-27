@@ -26,12 +26,20 @@ const Nav = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+    const handleContact = () => {
+        // Scroll down by 100vh
+        window.scrollTo({
+            top: window.innerHeight * 1.75,
+            behavior: 'smooth', // Optional: Add smooth scrolling animation
+        });
+    };
+
     return (
         <div className={`w-full ${showNavbar ? `sticky top-0 left-0 z-50` : `hidden`} `}>
-            <div className=' h-[7dvh] w-full bg-black flex justify-evenly items-center'>
+            <div className=' h-[7dvh] w-full bg-[#000000e7] backdrop-blur-[3px] flex justify-around items-center'>
                 <div className='font-extrabold hover:text-white/85 cursor-pointer text-2xl'>PromoPulse</div>
-                <div className='flex justify-evenly w-4/12 items-center'><div>Home</div></div>
-                <button className='border border-white p-2 rounded-xl hover:text-gray-900 hover:bg-white'>Contact Us</button>
+                <div className='flex justify-evenly w-4/12 items-center'><div className='font-bold text-xl'>Home</div></div>
+                <button onClick={handleContact} className='border border-white p-2 rounded-xl hover:text-gray-900 hover:bg-white'>Contact Us</button>
             </div>
         </div>
     )
