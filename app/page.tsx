@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -14,7 +13,7 @@ export default function Home() {
       </div>
 
       <Hero />
-      <div className="bg-[#fff] relative text-black p-16 w-full flex flex-col justify-center items-center">
+      <div className=" relative text-black p-16 w-full flex flex-col justify-center items-center">
         <h1 className="font-bold text-4xl md:text-5xl">We don<span>'</span>t want you to make a mistake now!</h1>
         <div className="lg:flex lg:space-x-5 space-y-6 justify-start h-[40dvh] w-full p-6 items-start">
           <div className="lg:inset-[150px_52.5dvw_auto_auto] sm:w-[65%] lg:w-1/2 lg:pr-32 lg:pl-40 lg:pb-28 ribbon-left bg-black text-white lg:text-lg p-6 sm:text-[0.7em] sm:pb-16 sm:pl-20 sm:inset-[18dvh_41dvw_auto_auto] text-[0.6em] pr-12 w-[80%] pl-8 pb-12 pt-2 inset-[25dvh_25dvw_auto_auto]">
@@ -30,6 +29,10 @@ export default function Home() {
             <li>You<span>'</span>re unwilling to collaborate</li>
           </div>
         </div>
+      </div>
+      <div className="w-full flex justify-center">
+        <div className="text-black font-bold text-[1.4rem]">Qualified? Great!</div>
+
       </div>
       <Calendly />
       <Footer />
